@@ -8,6 +8,6 @@ RUN wget https://apache-mirror.rbc.ru/pub/apache/tomcat/tomcat-9/v9.0.45/bin/apa
     && rm -rf /tmp
 RUN apk del .service-package
 EXPOSE 8080
-VOLUME /var/lib/jenkins/workspace/docker pipe/target /usr/local/tomcat/webapps
+VOLUME /var/lib/jenkins/workspace/docker\\ pipe/target /usr/local/tomcat/webapps
 
 CMD /usr/local/tomcat/bin/catalina.sh run
